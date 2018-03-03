@@ -4,6 +4,14 @@ $.ajax({
     data: { limit: 10 }
 }).done(handleResponse).fail(handleFailure); //haciendo el onload de la api,con funciones de respuesta positiva y negativa
 
+function infoOfEachPokemon(namePokemons) {
+    return $.ajax({
+        url: `https://pokeapi.co/api/v2/pokemon/${namePokemons}`,
+    }).done(function(response) {
+        detailsPokemon(response)
+    })
+}
+
 //funcion con la respuesta positiva para manipular su data
 function handleResponse(data) {
     console.log('the ajax request has finished!');
@@ -27,12 +35,6 @@ function pokeInfo(dataPokemon) {
         //console.log(urlPokemons, namePokemons);
 
         paintElements(namePokemons);
-
-        // $.ajax({
-        //     url: `https://pokeapi.co/api/v2/pokemon/${urlPokemons}`,
-        // }).done(detailsPokemon).fail(handleFailure)
-
-        //console.log(urlPokemons);
     });
 }
 
@@ -58,18 +60,19 @@ function paintElements(namePokemons) {
     //$cardPokemon.append($urlCard);
 
     //agregar elementos hijos a su padre
+    $divCard.append($imgPokemon);
     $sectionIcons.append($imgPokeball);
     $sectionIcons.append($imgHeart);
     $sectionIcons.append($imgData);
-    $cardPokemon.append($nameCard);
     $cardPokemon.append($sectionIcons);
+    $cardPokemon.append($nameCard);
     $divCard.append($cardPokemon);
-    $divCard.append($imgPokemon);
     $("#section-all").append($divCard)
 
     console.log("si entra");
 };
 
-// function detailsPokemon() {
-//     console.log("respuesta")
-// }
+function detailsPokemon(response) {
+    console.log("respuesta");
+    //var pokeName = response.
+}
