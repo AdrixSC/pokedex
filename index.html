@@ -4,33 +4,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokedex</title>
 </head>
 
 <body>
 
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-        <img class=logo src="assets/img/logo-pokemon.png" alt="logo-pokemon">
-        <h3>POKEDEX</h3>
-        </a>
-    </nav>
-<section id=section-all>
-    <!-- <div class="card col-md-3" style="width: 18rem;">
-         <img class="card-img-top" src="assets/img/267.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary">URL</a>
-        </div> 
-    </div> -->
-</section>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <section class="container-fluid">
+        <nav class="navbar">
+            <h1>Pokédex</h1>
+        </nav>
+        <section class="section-filter">
+            <div class="filter">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <hr>
+            </div>
+            <div class="a-z">A - Z</div>
+        </section>
+        <!--Section donde se pintarán las tarjetas de los pokemon-->
+        <section id=section-all class="row">
+            <!--<div class="card col-md-2 offset-md-1" style="width: 18rem;">
+                <img class="card-img-top" src="assets/img/267.png" alt="Card image cap">
+                <div class="card-body">
+                    <div class="icons">
+                        <img class="style-icons" src="assets/icon/pokeball_gray.png" alt="pokeball">
+                        <img class="style-icons" src="assets/icon/valentines-heart.png" alt="heart">
+                        <img class="style-icons" src="assets/icon/data.png" alt="data">
+                    </div>
+                    <h5 class="card-title">Card title</h5>
+                </div>
+            </div>-->
+        </section>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>

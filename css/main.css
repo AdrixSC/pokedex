@@ -1,7 +1,46 @@
+#section-all {
+    margin-top: 80px;
+}
+
 .logo {
     width: 15%;
 }
 
-h3 {
-    
+.navbar>h1 {
+    color: red;
+    margin-left: 40%;
+}
+
+hr {
+    width: 4800%;
+    margin-left: 300%;
+}
+
+.section-filter {
+    padding-top: 30px;
+}
+
+.filter {
+    float: left;
+}
+
+.a-z {
+    float: right;
+    background-color: green;
+    padding: 10px;
+    color: white;
+}
+
+.style-icons {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    color: #646464;
+    margin-top: 10px;
 }
